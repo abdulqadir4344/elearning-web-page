@@ -1,5 +1,7 @@
 {% load static %}
 
+
+
 {% block body %}
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +19,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -32,13 +36,13 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
     <!-- Spinner End -->
-
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
@@ -53,15 +57,16 @@
                 <a href="/" class="nav-item nav-link active">Home</a>
                 <a href="/about" class="nav-item nav-link">About</a>
                 <a href="/courses" class="nav-item nav-link">Courses</a>
-				<a href="/experts" class="nav-item nav-link">Our Expert</a>
+                <a href="/experts" class="nav-item nav-link">Our Expert</a>
                 <a href="/contact" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i
+                    class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
-	
-	
+
+
     <!-- Header Start -->
     <div class="container-fluid bg-primary py-5 mb-5 page-header">
         <div class="container py-5">
@@ -79,7 +84,7 @@
         </div>
     </div>
     <!-- Header End -->
-	
+
     <!-- Contact Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -90,9 +95,12 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h5>Get In Touch</h5>
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form
+                        with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're
+                        done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
                     <div class="d-flex align-items-center mb-3">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                            style="width: 50px; height: 50px;">
                             <i class="fa fa-map-marker-alt text-white"></i>
                         </div>
                         <div class="ms-3">
@@ -101,7 +109,8 @@
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-3">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                            style="width: 50px; height: 50px;">
                             <i class="fa fa-phone-alt text-white"></i>
                         </div>
                         <div class="ms-3">
@@ -110,7 +119,8 @@
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                            style="width: 50px; height: 50px;">
                             <i class="fa fa-envelope-open text-white"></i>
                         </div>
                         <div class="ms-3">
@@ -148,7 +158,8 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                        style="height: 150px"></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
@@ -203,7 +214,7 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-   
+
     <!-- Template Javascript -->
     <script src="{% static 'js/main.js' %}"></script>
 </body>
@@ -211,5 +222,3 @@
 </html>
 
 {% endblock body %}
-
-
